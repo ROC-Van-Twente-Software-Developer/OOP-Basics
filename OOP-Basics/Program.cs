@@ -4,7 +4,7 @@ Zoo zoo = new Zoo();
 try
 {
     // Maak een verblijf en voeg daar 2 leeuwen aan toe
-    Enclosure lionEnclosure = new Enclosure();
+    Enclosure lionEnclosure = new Enclosure(); 
     lionEnclosure.AddAnimal(new Lion { Name = "Simba" });
     lionEnclosure.AddAnimal(new Lion { Name = "Nala" });
     

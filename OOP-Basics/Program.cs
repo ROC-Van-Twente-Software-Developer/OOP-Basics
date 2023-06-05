@@ -7,6 +7,10 @@ try
     Enclosure lionEnclosure = new Enclosure();
     lionEnclosure.AddAnimal(new Lion { Name = "Simba" });
     lionEnclosure.AddAnimal(new Lion { Name = "Nala" });
+    
+    // Geeft een error
+    //lionEnclosure.AddAnimal(new Elephant { Name = "Jumbo" });
+    
     zoo.AddEnclosure(lionEnclosure);
 
     // Maak een verblijf en voeg daar 2 olifanten aan toe
@@ -17,7 +21,7 @@ try
 }
 catch (Exception ex)
 {
-    Console.WriteLine(ex.ToString());   
+    Console.WriteLine(ex.ToString());
 }
 
 zoo.MakeAllSounds();

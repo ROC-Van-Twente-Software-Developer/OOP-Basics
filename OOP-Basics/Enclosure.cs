@@ -16,9 +16,12 @@
             // Controleer of animal van het zelfde type is als er al een dier in de lijst staat. 
             // Een olifant en leeuw in hetzelfde verblijf is geen goed idee. 
 
-            if (animal.GetType() != Animals[0].GetType())
+            if (Animals.Count > 0)
             {
-                throw new Exception("Er mogen geen 2 verschillende dieren in 1 verblijf zitten.");
+                if (animal.GetType() != Animals[0].GetType())
+                {
+                    throw new Exception("Er mogen geen 2 verschillende dieren in 1 verblijf zitten.");
+                }
             }
 
             Animals.Add(animal);
